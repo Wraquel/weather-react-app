@@ -1,0 +1,98 @@
+.Weather {
+  border: black 1px solid;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px 20px 5px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: black;
+  text-align: center;
+  background: linear-gradient(to bottom, #98ccee 0%, #e6ec94 100%);
+  font-family: Roboto, sans-serif;
+}
+.Weather form {
+  margin: 10px 90px;
+}
+.Weather .form-control,
+.btn {
+  border-radius: 1px;
+  border: black 1px solid;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.Weather .form-control:hover {
+  box-shadow: 2px -2px rgb(20, 20, 20);
+  border: none;
+}
+.Weather .btn:hover {
+  box-shadow: 2px -2px rgb(20, 20, 20);
+}
+.WeatherInfo .temperatures {
+  margin-bottom: -18px;
+}
+.WeatherInfo .city {
+  font-size: 25px;
+  margin: 5px 0px;
+  line-height: 30px;
+}
+.WeatherInfo .date {
+  margin-top: -5px;
+  font-size: 14px;
+}
+
+.temperature-currentday-max,
+.temperature-currentday-min {
+  position: relative;
+  bottom: -70px;
+  font-size: 25px;
+}
+.WeatherInfo .temperature-currentday {
+  font-size: 100px;
+  font-weight: lighter;
+}
+.WeatherInfo .celsius {
+  font-size: 20px;
+  position: relative;
+  bottom: 60px;
+}
+.WeatherInfo img {
+  width: 100px;
+  margin-top: 40px;
+}
+.WeatherInfo .description {
+  font-size: 22px;
+}
+.WeatherInfo ul {
+  list-style: none;
+  margin: 20px 0px 15px;
+}
+
+.WeatherInfo li {
+  font-size: 15px;
+  display: inline-block;
+  margin: 10px;
+}
+.WeatherForecast img {
+  width: 30px;
+}
+
+.WeatherForecast .Weather-forecast-day {
+  font-size: 20px;
+}
+.WeatherForecast {
+  border: solid 1px black;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: whitesmoke;
+}
+.WeatherForecast:hover {
+  box-shadow: 3px -3px rgb(20, 20, 20);
+  border: none;
+}
+.Weather footer {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: monospace;
+}
