@@ -9,7 +9,7 @@ export default function WeatherInfo() {
       <div>
         <img
           src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg"
-          alt="image"
+          alt="icontemp"
         />
       </div>
       <div className="temperatures">
