@@ -7,7 +7,10 @@ export default function WeatherForecast() {
       <div className="col-2">
         <div className="WeatherForecast">
           <div className="Weather-forecast-day"> Tue </div>
-          <img src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg" />
+          <img
+            src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg"
+            alt="image"
+          />
           <div>
             <span className="Weather-forecast-temp-max">16º</span>
             <span className="Weather-forecast-temp-min">17º</span>
@@ -17,7 +20,10 @@ export default function WeatherForecast() {
       <div className="col-2">
         <div className="WeatherForecast">
           <div className="Weather-forecast-day"> Tue </div>
-          <img src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg" />
+          <img
+            src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg"
+            alt="image"
+          />
           <div>
             <span className="Weather-forecast-temp-max">16º</span>
             <span className="Weather-forecast-temp-min">17º</span>
@@ -27,7 +33,10 @@ export default function WeatherForecast() {
       <div className="col-2">
         <div className="WeatherForecast">
           <div className="Weather-forecast-day"> Tue </div>
-          <img src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg" />
+          <img
+            src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg"
+            alt="image"
+          />
           <div>
             <span className="Weather-forecast-temp-max">16º</span>
             <span className="Weather-forecast-temp-min">17º</span>
@@ -37,7 +46,10 @@ export default function WeatherForecast() {
       <div className="col-2">
         <div className="WeatherForecast">
           <div className="Weather-forecast-day"> Tue </div>
-          <img src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg" />
+          <img
+            src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg"
+            alt="image"
+          />
           <div>
             <span className="Weather-forecast-temp-max">16º</span>
             <span className="Weather-forecast-temp-min">17º</span>
@@ -47,7 +59,10 @@ export default function WeatherForecast() {
       <div className="col-2">
         <div className="WeatherForecast">
           <div className="Weather-forecast-day"> Tue </div>
-          <img src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg" />
+          <img
+            src="https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg"
+            alt="image"
+          />
           <div>
             <span className="Weather-forecast-temp-max">16º</span>
             <span className="Weather-forecast-temp-min">17º</span>
