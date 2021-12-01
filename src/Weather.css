@@ -27,6 +27,7 @@
 }
 .WeatherInfo .temperatures {
   margin-bottom: -18px;
+  margin-top: 20px;
 }
 .WeatherInfo .city {
   font-size: 25px;
@@ -53,15 +54,15 @@
   bottom: 60px;
 }
 .WeatherInfo img {
-  width: 100px;
-  margin-top: 40px;
+  width: 140px;
+  margin-top: 60px;
 }
 .WeatherInfo .description {
   font-size: 22px;
 }
 .WeatherInfo ul {
   list-style: none;
-  margin: 20px 0px 15px;
+  margin: 40px 0px 25px;
 }
 
 .WeatherInfo li {
@@ -120,13 +121,15 @@
   }
   .WeatherInfo .celsius {
     font-size: 15px;
+    position: relative;
+    bottom: 50px;
   }
   .temperature-currentday-max,
   .temperature-currentday-min {
     font-size: 20px;
   }
   .WeatherInfo img {
-    width: 85px;
+    width: 100px;
   }
   .WeatherInfo .description {
     font-size: 18px;
@@ -157,5 +160,13 @@
   }
   .Weather {
     border: black 1px solid;
+  }
+  .WeatherInfo li {
+    font-size: 15px;
+    display: inline-block;
+    margin: 5px;
+  }
+  .Weather form {
+    margin: 10px 70px;
   }
 }
