@@ -18,7 +18,10 @@ export default function WeatherInfo() {
           <div className="col-8">
             <div className="row">
               <div className="col-3">
-                <div className="temperature-currentday-min">16º</div>{" "}
+                <div className="temperature-currentday-min">
+                  {" "}
+                  <small>MIN </small>16º
+                </div>{" "}
               </div>
               <div className="col-6">
                 {" "}
@@ -27,14 +30,16 @@ export default function WeatherInfo() {
                 </span>{" "}
               </div>
               <div className="col-3">
-                <div className="temperature-currentday-max">22º</div>
+                <div className="temperature-currentday-max">
+                  22º<small> MAX</small>
+                </div>
               </div>
             </div>
           </div>
           <div className="col-2"> </div>
         </div>
       </div>
-      <div className="description">Mostly sunny</div>
+      <div className="description">MOSTLY SUNNY</div>
 
       <ul>
         <li> Feels like: 20ºC</li>
