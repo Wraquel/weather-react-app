@@ -14,29 +14,29 @@ export default function WeatherInfo() {
       </div>
       <div className="temperatures">
         <div className="row">
-          <div className="col-2"> </div>
-          <div className="col-8">
+          <div className="col-1"> </div>
+          <div className="col-10">
             <div className="row">
-              <div className="col-3">
+              <div className="col-4">
                 <div className="temperature-currentday-min">
                   {" "}
                   <small>MIN </small>16º
                 </div>{" "}
               </div>
-              <div className="col-6">
+              <div className="col-4">
                 {" "}
                 <span className="temperature-currentday">
                   20<span className="celsius">ºC</span>
                 </span>{" "}
               </div>
-              <div className="col-3">
+              <div className="col-4">
                 <div className="temperature-currentday-max">
-                  22º<small> MAX</small>
+                  22º <small>MAX</small>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-2"> </div>
+          <div className="col-1"> </div>
         </div>
       </div>
       <div className="description">MOSTLY SUNNY</div>

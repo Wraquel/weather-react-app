@@ -8,10 +8,7 @@
   background: linear-gradient(to bottom, #98ccee 0%, #e6ec94 100%);
   font-family: Roboto, sans-serif;
 }
-.row {
-  padding-left: 0px;
-  padding-right: 0px;
-}
+
 .Weather form {
   margin: 10px 90px;
 }
@@ -70,6 +67,7 @@ small {
 .WeatherInfo ul {
   list-style: none;
   margin: 40px 0px 25px;
+  padding: 0px;
 }
 
 .WeatherInfo li {
@@ -89,7 +87,6 @@ small {
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   background-color: whitesmoke;
-  margin: auto 10px;
 }
 .WeatherForecast:hover {
   box-shadow: 3px -3px rgb(20, 20, 20);
@@ -169,5 +166,8 @@ small {
   }
   .Weather form {
     margin: 10px 45px;
+  }
+  small {
+    font-size: 9px;
   }
 }
