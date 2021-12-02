@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 
@@ -10,10 +11,10 @@ export default function Weather(props) {
     setweatherData({
       ready: true,
       city: response.data.name,
+      date: new Date(response.data.dt * 1000),
       icon: "https://cdn.jsdelivr.net/npm/open-weather-icons@0.0.7/src/svg/03d.svg",
       temperature: Math.round(response.data.main.temp),
       description: response.data.weather[0].main,
-      feels_like: response.data.main.fells_like,
       wind: Math.round(response.data.wind.speed),
       maximum: Math.round(response.data.main.temp_max),
       minimum: Math.round(response.data.main.temp_min),
@@ -34,7 +35,7 @@ export default function Weather(props) {
         </form>
         <div className="WeatherInfo">
           <div className="city">{weatherData.city}</div>
-          <div className="date"> Tuesday 30/11</div>
+          <FormattedDate date={weatherData.date} />
 
           <div>
             <img src={weatherData.icon} alt="icontemp" />
@@ -47,8 +48,7 @@ export default function Weather(props) {
                   <div className="col-4">
                     <div className="temperature-currentday-min">
                       {" "}
-                      <small>MIN </small>
-                      {weatherData.minimum}º
+                      {weatherData.minimum}º <small>MIN </small>
                     </div>{" "}
                   </div>
                   <div className="col-4">
@@ -60,7 +60,7 @@ export default function Weather(props) {
                   </div>
                   <div className="col-4">
                     <div className="temperature-currentday-max">
-                      {weatherData.maximum}º<small>MAX</small>
+                      {weatherData.maximum}º <small>MAX</small>
                     </div>
                   </div>
                 </div>
@@ -71,7 +71,6 @@ export default function Weather(props) {
           <div className="description">{weatherData.description}</div>
 
           <ul>
-            <li> Feels like: {weatherData.feels_like} ºC</li>
             <li> Humidity: {weatherData.humidity} %</li>
             <li> Wind: {weatherData.wind} km/h </li>
           </ul>
