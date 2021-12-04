@@ -1,0 +1,27 @@
+.WeatherForecast {
+  text-align: center;
+  margin-top: 30px;
+}
+.Weather-forecast-temp-max {
+  color: rgb(20, 20, 20);
+  margin-right: 5px;
+}
+
+.Weather-forecast-day {
+  font-size: 18px;
+}
+.col {
+  margin: auto 10px;
+  border: solid 1px black;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: whitesmoke;
+}
+.col:hover {
+  box-shadow: 3px -3px rgb(20, 20, 20);
+  border: none;
+}
+
+.WeatherInfo canvas {
+  margin-top: 40px;
+}
