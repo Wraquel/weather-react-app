@@ -33,9 +33,7 @@
   .Weather-forecast-temp-min {
     font-size: 13px;
   }
-}
-@media (max-width: 476px) {
   .col {
-    margin: 10px 3px;
+    margin: 10px 3px 15px;
   }
 }
