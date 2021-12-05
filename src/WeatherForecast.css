@@ -1,27 +1,41 @@
 .WeatherForecast {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .Weather-forecast-temp-max {
-  color: rgb(20, 20, 20);
   margin-right: 5px;
+
+  font-weight: bold;
 }
 
 .Weather-forecast-day {
   font-size: 18px;
 }
 .col {
-  margin: auto 10px;
-  border: solid 1px black;
+  padding: 5px 0px;
+  margin: 10px 8px 5px;
+  border: solid 1px rgb(61, 53, 53);
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-color: whitesmoke;
 }
 .col:hover {
-  box-shadow: 3px -3px rgb(20, 20, 20);
+  box-shadow: 3px 3px rgb(20, 20, 20);
   border: none;
 }
-
-.WeatherInfo canvas {
-  margin-top: 40px;
+@media (max-width: 576px) {
+  .col {
+    margin: 10px 5px;
+  }
+  .col .Weather-forecast-day {
+    font-size: 13px;
+  }
+  .Weather-forecast-temp-max,
+  .Weather-forecast-temp-min {
+    font-size: 13px;
+  }
+}
+@media (max-width: 476px) {
+  .col {
+    margin: 10px 3px;
+  }
 }

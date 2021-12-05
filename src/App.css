@@ -1,10 +1,23 @@
 .App {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 500px;
+  min-width: 370px;
+  margin: 0px auto;
+}
+.App footer {
+  font-size: 12px;
+  text-align: center;
+  font-family: monospace;
+}
+.App a {
+  text-decoration: none;
 }
 
 @media (max-width: 576px) {
+  .App footer {
+    font-size: 10px;
+  }
   .container {
-    padding: 0px;
+    margin: 0px;
+    padding: 1px 1px 1px;
   }
 }

@@ -8,7 +8,7 @@ export default function WeatherInfo(props) {
       <div className="city"> {props.data.city} </div>
       <FormattedDate date={props.data.date} />
       <div>
-        <WeatherIcon code={props.data.icon} size={100} />
+        <WeatherIcon code={props.data.icon} size={80} />
       </div>
       <div className="temperatures">
         <div className="row">
@@ -16,9 +16,9 @@ export default function WeatherInfo(props) {
           <div className="col-10">
             <div className="row">
               <div className="col-4">
-                <div className="temperature-currentday-min">
+                <div className="temperature-currentday-max">
                   {" "}
-                  {props.data.minimum}º <small>MIN </small>
+                  {props.data.maximum}º <small>MAX </small>
                 </div>{" "}
               </div>
               <div className="col-4">
@@ -29,8 +29,8 @@ export default function WeatherInfo(props) {
                 </span>{" "}
               </div>
               <div className="col-4">
-                <div className="temperature-currentday-max">
-                  {props.data.maximum}º <small>MAX</small>
+                <div className="temperature-currentday-min">
+                  {props.data.minimum}º <small>MIN</small>
                 </div>
               </div>
             </div>
@@ -41,8 +41,8 @@ export default function WeatherInfo(props) {
       <div className="description">{props.data.description}</div>
 
       <ul>
-        <li> Humidity: {props.data.humidity} %</li>
-        <li> Wind: {props.data.wind} km/h </li>
+        <li> Humidity:{props.data.humidity}%</li>
+        <li> Wind:{props.data.wind}km/h </li>
       </ul>
     </div>
   );

@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import background from "./midia/Image-background.jpg";
 
 export default function Weather(props) {
   const [weatherData, setweatherData] = useState({ ready: false });
@@ -37,7 +38,10 @@ export default function Weather(props) {
   }
   if (weatherData.ready) {
     return (
-      <div className="Weather">
+      <div
+        className="Weather"
+        style={{ backgroundImage: `url(${background})` }}
+      >
         <form className="d-flex justify-content-center" onSubmit={handleSubmit}>
           <input
             type="search"
