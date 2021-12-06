@@ -5,6 +5,7 @@
   color: seashell;
   text-align: center;
   font-family: monospace;
+  background-color: #6bc2ae;
 }
 .Weather form {
   margin: 5px 70px;
@@ -17,9 +18,13 @@
   border-top-right-radius: 13px;
   border: black 1px solid;
   font-size: 15px;
+  box-shadow: 3px 3px rgb(20, 20, 20);
 }
 .Weather .form-control {
   margin-right: 5px;
+}
+.Weather .btn {
+  background-color: rgba(230, 86, 98, 0.904);
 }
 .Weather .form-control:hover {
   box-shadow: 4px 4px rgb(20, 20, 20);
@@ -30,12 +35,14 @@
 }
 .WeatherInfo .temperatures {
   margin-bottom: -30px;
+  text-shadow: 2px 2px rgb(20, 20, 20);
 }
 .WeatherInfo .city {
   font-size: 28px;
   margin: 10px auto -3px;
   line-height: 30px;
   font-weight: bold;
+  text-shadow: 2px 2px rgb(20, 20, 20);
 }
 .WeatherInfo canvas {
   margin-top: 30px;
@@ -83,6 +90,7 @@ small {
   list-style: none;
   margin: 20px 0px 15px;
   text-align: right;
+  text-shadow: 1px 1px rgb(20, 20, 20);
 }
 .WeatherInfo li {
   font-size: 15px;

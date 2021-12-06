@@ -10,13 +10,15 @@
 .Weather-forecast-day {
   font-size: 20px;
   color: seashell;
-  font-family: "Meow Script", cursive;
 }
 .col {
+  background-color: rgba(230, 86, 98, 0.904);
+  border: 1px solid black;
   padding: 5px 0px;
   margin: 10px 8px 5px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
+  box-shadow: 3px 3px rgb(20, 20, 20);
 }
 .col:hover {
   box-shadow: 3px 3px rgb(20, 20, 20);
