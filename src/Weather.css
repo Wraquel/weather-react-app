@@ -158,4 +158,8 @@ small {
     position: relative;
     left: 10px;
   }
+  .WeatherInfo .temperature-currentday {
+    position: relative;
+    left: -4px;
+  }
 }
