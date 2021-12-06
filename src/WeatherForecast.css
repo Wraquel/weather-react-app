@@ -1,33 +1,38 @@
+:root {
+  --primary-color: rgba(230, 86, 98, 0.904);
+  --secondary-color: black;
+  --terciary-color: rgb(20, 20, 20);
+  --quaternary-color: seashell;
+}
+.col {
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 5px 0px;
+  margin: 10px 8px 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 3px 3px var(--terciary-color);
+}
+.col:hover {
+  box-shadow: 3px 3px var(--terciary-color);
+  border: none;
+}
 .WeatherForecast {
   text-align: center;
   margin-top: 20px;
+}
+.Weather-forecast-day {
+  font-size: 20px;
+  color: var(--quaternary-color);
 }
 .Weather-forecast-temp-max {
   margin-right: 5px;
   font-weight: bold;
 }
 
-.Weather-forecast-day {
-  font-size: 20px;
-  color: seashell;
-}
-.col {
-  background-color: rgba(230, 86, 98, 0.904);
-  border: 1px solid black;
-  padding: 5px 0px;
-  margin: 10px 8px 15px;
-  border-bottom-left-radius: 15px;
-
-  border-top-right-radius: 15px;
-  box-shadow: 3px 3px rgb(20, 20, 20);
-}
-.col:hover {
-  box-shadow: 3px 3px rgb(20, 20, 20);
-  border: none;
-}
 @media (max-width: 576px) {
   .col {
-    margin: 10px 5px;
+    margin: 10px 3px 15px;
   }
   .col .Weather-forecast-day {
     font-size: 15px;
@@ -35,8 +40,5 @@
   .Weather-forecast-temp-max,
   .Weather-forecast-temp-min {
     font-size: 13px;
-  }
-  .col {
-    margin: 10px 3px 15px;
   }
 }

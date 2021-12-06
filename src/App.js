@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Berlin" />
+        <Weather defaultCity="Lisbon" />
       </div>
       <footer>
         <a href="https://github.com/Wraquel/weather-react-app">Open-source </a>{" "}

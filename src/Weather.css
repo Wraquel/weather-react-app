@@ -1,11 +1,17 @@
+:root {
+  --primary-color: rgba(230, 86, 98, 0.904);
+  --secondary-color: black;
+  --terciary-color: rgb(20, 20, 20);
+  --quaternary-color: seashell;
+}
+
 .Weather {
-  border: black 1px solid;
-  margin: 8px auto 3px;
+  border: var(--secondary-color) 1px solid;
+  margin: 8px auto 0px;
   padding: 20px 20px 5px;
-  color: seashell;
+  color: var(--quaternary-color);
   text-align: center;
   font-family: monospace;
-  background-color: #6bc2ae;
 }
 .Weather form {
   margin: 5px 70px;
@@ -16,51 +22,53 @@
   padding: 3px;
   border-bottom-left-radius: 13px;
   border-top-right-radius: 13px;
-  border: black 1px solid;
+  border: var(--secondary-color) 1px solid;
   font-size: 15px;
-  box-shadow: 3px 3px rgb(20, 20, 20);
+  box-shadow: 3px 3px var(--terciary-color);
 }
 .Weather .form-control {
   margin-right: 5px;
 }
 .Weather .btn {
-  background-color: rgba(230, 86, 98, 0.904);
+  background-color: var(--primary-color);
 }
 .Weather .form-control:hover {
-  box-shadow: 4px 4px rgb(20, 20, 20);
+  box-shadow: 4px 4px var(--terciary-color);
   border: none;
 }
 .Weather .btn:hover {
-  box-shadow: 4px 4px rgb(20, 20, 20);
-}
-.WeatherInfo .temperatures {
-  margin-bottom: -20px;
-  text-shadow: 2px 2px rgb(20, 20, 20);
+  box-shadow: 4px 4px var(--terciary-color);
 }
 .WeatherInfo .city {
   font-size: 28px;
   margin: 10px auto -3px;
   line-height: 30px;
   font-weight: bold;
-  text-shadow: 2px 2px rgb(20, 20, 20);
-}
-.WeatherInfo canvas {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  text-shadow: 2px 2px var(--terciary-color);
 }
 .date {
-  color: rgb(20, 20, 20);
+  color: var(--terciary-color);
   font-size: 28px;
   font-family: "Meow Script", cursive;
 }
 .hour {
   font-size: 14px;
-  color: rgb(20, 20, 20);
+  color: var(--terciary-color);
 }
-small {
-  font-size: 11px;
+.WeatherInfo canvas {
+  margin: 40px auto 20px;
+}
+.WeatherInfo .temperatures {
+  text-shadow: 2px 2px var(--terciary-color);
+}
+.WeatherInfo .temperature-currentday {
+  font-size: 100px;
+}
+.WeatherInfo .celsius {
+  font-size: 20px;
   position: relative;
-  bottom: 20px;
+  bottom: 58px;
+  font-weight: bold;
 }
 .temperature-currentday-max,
 .temperature-currentday-min {
@@ -71,15 +79,10 @@ small {
 .temperature-currentday-max {
   font-weight: bold;
 }
-
-.WeatherInfo .temperature-currentday {
-  font-size: 100px;
-}
-.WeatherInfo .celsius {
-  font-size: 20px;
+small {
+  font-size: 11px;
   position: relative;
-  bottom: 58px;
-  font-weight: bold;
+  bottom: 20px;
 }
 .WeatherInfo .description {
   font-size: 30px;
@@ -89,14 +92,25 @@ small {
 }
 .WeatherInfo ul {
   list-style: none;
-  margin: 20px 0px 15px;
+  margin: 0px 0px 15px;
   text-align: right;
-  text-shadow: 1px 1px rgb(20, 20, 20);
+  text-shadow: 1px 1px var(--terciary-color);
 }
 .WeatherInfo li {
   font-size: 15px;
 }
 @media (max-width: 576px) {
+  .Weather {
+    border: var(--secondary-color) 1px solid;
+  }
+  .Weather form {
+    margin: 10px 45px;
+  }
+  .Weather .form-control,
+  .btn {
+    padding: 4px;
+    font-size: 15px;
+  }
   .WeatherInfo .city {
     font-size: 22px;
     line-height: 20px;
@@ -107,11 +121,12 @@ small {
   .hour {
     font-size: 12px;
   }
+  .WeatherInfo canvas {
+    width: 90px;
+  }
+
   .WeatherInfo .temperature-currentday {
     font-size: 85px;
-  }
-  .WeatherInfo .temperatures {
-    margin: 20px auto -20px;
   }
   .WeatherInfo .celsius {
     font-size: 17px;
@@ -122,35 +137,17 @@ small {
   .temperature-currentday-min {
     font-size: 22px;
   }
+  small {
+    font-size: 11px;
+  }
   .WeatherInfo .description {
     font-size: 24px;
   }
   .WeatherInfo ul {
-    margin: 40px 0px 25px;
+    margin-top: 20px;
   }
   .WeatherInfo li {
     font-size: 14px;
-  }
-  .Weather .form-control,
-  .btn {
-    padding: 4px;
-    font-size: 15px;
-  }
-  .Weather {
-    border: black 1px solid;
-  }
-  .WeatherInfo li {
-    font-size: 13px;
-  }
-  .Weather form {
-    margin: 10px 45px;
-  }
-  .WeatherInfo canvas {
-    margin-top: 50px;
-    width: 90px;
-  }
-  small {
-    font-size: 11px;
   }
 }
 @media (max-width: 476px) {
