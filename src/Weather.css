@@ -1,6 +1,6 @@
 .Weather {
   border: black 1px solid;
-  margin: 8px auto 3px;
+  margin: 2px auto 3px;
   padding: 20px 20px 5px;
   color: seashell;
   text-align: center;
@@ -39,7 +39,7 @@
 }
 .WeatherInfo .city {
   font-size: 28px;
-  margin: 10px auto -3px;
+  margin: 14px auto -3px;
   line-height: 30px;
   font-weight: bold;
   text-shadow: 2px 2px rgb(20, 20, 20);
@@ -88,7 +88,7 @@ small {
 }
 .WeatherInfo ul {
   list-style: none;
-  margin: 20px 0px 15px;
+  margin: 20px 0px -5px;
   text-align: right;
   text-shadow: 1px 1px rgb(20, 20, 20);
 }
