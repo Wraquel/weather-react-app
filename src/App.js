@@ -8,7 +8,7 @@ function App() {
         <Weather defaultCity="Berlin" />
       </div>
       <footer>
-        <a href="https://github.com/Wraquel/weather-react-app">Open-sourced </a>{" "}
+        <a href="https://github.com/Wraquel/weather-react-app">Open-source </a>{" "}
         by Raquel Wetzel
       </footer>
     </div>

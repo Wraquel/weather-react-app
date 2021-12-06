@@ -4,17 +4,17 @@
 }
 .Weather-forecast-temp-max {
   margin-right: 5px;
-
   font-weight: bold;
 }
 
 .Weather-forecast-day {
-  font-size: 18px;
+  font-size: 20px;
+  color: seashell;
+  font-family: "Meow Script", cursive;
 }
 .col {
   padding: 5px 0px;
   margin: 10px 8px 5px;
-  border: solid 1px rgb(61, 53, 53);
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -27,7 +27,7 @@
     margin: 10px 5px;
   }
   .col .Weather-forecast-day {
-    font-size: 13px;
+    font-size: 15px;
   }
   .Weather-forecast-temp-max,
   .Weather-forecast-temp-min {

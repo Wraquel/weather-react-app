@@ -14,6 +14,7 @@ export default function Weather(props) {
       ready: true,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
+      country: response.data.sys.country,
       icon: response.data.weather[0].icon,
       temperature: Math.round(response.data.main.temp),
       feelslike: Math.round(response.data.main.feels_like),

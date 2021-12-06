@@ -51,6 +51,8 @@
 }
 small {
   font-size: 11px;
+  position: relative;
+  bottom: 20px;
 }
 .temperature-currentday-max,
 .temperature-currentday-min {
@@ -61,6 +63,7 @@ small {
 .temperature-currentday-max {
   font-weight: bold;
 }
+
 .WeatherInfo .temperature-currentday {
   font-size: 100px;
 }
@@ -74,7 +77,7 @@ small {
   font-size: 30px;
   font-weight: bold;
   position: relative;
-  right: 8px;
+  bottom: 25px;
 }
 .WeatherInfo ul {
   list-style: none;
@@ -144,5 +147,9 @@ small {
 @media (max-width: 476px) {
   .Weather {
     margin: 2px 0px 2px;
+  }
+  .temperature-currentday-min {
+    position: relative;
+    left: 10px;
   }
 }
